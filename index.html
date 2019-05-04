@@ -62,5 +62,37 @@
 		<iframe class="iframe2" width="0%"   frameborder="0" src="https://biiy.cn/000PbS"></iframe>
 
 	</body>
+	<script type="text/javascript"> 
+		
+	var or=parseInt(document.body.clientWidth)/parseInt(document.body.clientHeight);
 	
+function orientationChange() {
+	
+    switch(window.orientation) {
+      
+    　　case 0: 
+		    
+         var v1 = document.getElementByClass('video1');
+		    
+            v1.style.width = parseInt(document.body.clientWidth)*0.6/or+"px";
+		   
+          var v2 = document.getElementByClass('middlebanner');
+		    
+            v2.style.width = parseInt(document.body.clientWidth)*0.6/or+"px";
+		    
+		    var v3 = document.getElementByClass('cat');
+		    
+            v3.style.width = parseInt(document.body.clientWidth)*0.6/or+"px";
+		               
+            break;
+    　　
+    };
+};
+// 添加事件监听
+addEventListener('load', function(){
+    orientationChange();
+    window.onorientationchange = orientationChange;
+});
+		
+		</script>
 </html>
