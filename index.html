@@ -44,7 +44,7 @@
 		<div class="divbanner" align="center"><img  width="10%" src="https://1guangzhoupainting.cdn.bcebos.com/下载按钮.png"/></div>
 		</a>
 		
-		<div class="video1" >
+		<div class="video1" id="video1">
 			
 			<video width="100%" autoplay="autoplay" src="https://1guangzhoupainting.cdn.bcebos.com/982a520海洋网页视频.webm" >
 		</video>
@@ -52,10 +52,10 @@
 		</div>
 		
 		<a href="https://biiy.cn/000Pb6">
-		<div class="middlebanner"align="center"><img  width="100%" src="https://1guangzhoupainting.cdn.bcebos.com/download2.jpg"/></div>
+		<div class="middlebanner" id="middlebanner" align="center"><img  width="100%" src="https://1guangzhoupainting.cdn.bcebos.com/download2.jpg"/></div>
 		</a>
 		
-		<div class="cat" align="center">
+		<div class="cat" id="cat" align="center">
 		<img  width="100%"  src="https://1guangzhoupainting.cdn.bcebos.com/机器猫.jpg"/>
 		</div>
 		
@@ -74,15 +74,15 @@ function orientationChange() {
 		    
 		    case 90: 
 		  
-         var v1 = document.getElementsByClassName('video1');
+         var v1 = document.getElementsById('video1');
 		    
             v1.style.width = parseInt(document.body.clientWidth)*0.6/or+"px";
 		   
-          var v2 = document.getElementsByClassName('middlebanner');
+          var v2 = document.getElementsById('middlebanner');
 		    
             v2.style.width = parseInt(document.body.clientWidth)*0.6/or+"px";
 		    
-		    var v3 = document.getElementsByClassName('cat');
+		    var v3 = document.getElementsById('cat');
 		    
             v3.style.width = parseInt(document.body.clientWidth)*0.6/or+"px";
 		           alert("ok");
@@ -91,15 +91,15 @@ function orientationChange() {
 		    
 		    case -90: 
 		   
-         var v1 = document.getElementsByClassName('video1');
+         var v1 = document.getElementsById('video1');
 		    
             v1.style.width = parseInt(document.body.clientWidth)*0.6/or+"px";
 		   
-          var v2 = document.getElementsByClassName('middlebanner');
+          var v2 = document.getElementsById('middlebanner');
 		    
             v2.style.width = parseInt(document.body.clientWidth)*0.6/or+"px";
 		    
-		    var v3 = document.getElementsByClassName('cat');
+		    var v3 = document.getElementsById('cat');
 		    
             v3.style.width = parseInt(document.body.clientWidth)*0.6/or+"px";
 		            
